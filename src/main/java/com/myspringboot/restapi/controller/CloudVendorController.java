@@ -13,7 +13,6 @@ public class CloudVendorController {
     public CloudVendorController(CloudVendorService cloudVendorService) {
         this.cloudVendorService = cloudVendorService;
     }
-
    //Read Specific Cloud Vendor Details
     @GetMapping("{vendorId}")
     public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
