@@ -4,6 +4,7 @@ import com.myspringboot.restapi.model.CloudVendor;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
+import java.util.Map;
 
 public interface CloudVendorService {
     public String createCloudVendor(CloudVendor cloudVendor);
@@ -12,4 +13,6 @@ public interface CloudVendorService {
     public CloudVendor getCloudVendor(String cloudVendorId);
     public List<CloudVendor> getAllCloudVendors();
 
+
+    public List<CloudVendor> getByVendorName(String vendorName);
 }
